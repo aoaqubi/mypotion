@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+  background:black;
+  overflow:hidden;
+  margin:0;
+  height:100vh;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.skull{
+  width:150px;
+
+  animation: zoom 3s infinite;
+}
+
+@keyframes zoom{
+  0%{
+    transform:scale(0.2);
+    opacity:0;
+  }
+
+  50%{
+    opacity:1;
+  }
+
+  100%{
+    transform:scale(3);
+    opacity:0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<img class="skull" src="skull.png">
+
+</body>
+</html>
